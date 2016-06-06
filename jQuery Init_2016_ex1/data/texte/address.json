@@ -1,0 +1,24 @@
+[
+{
+    "name": "Mulkay",
+    "firstName": "Alain",
+	"birthday": "24/02/1959",
+    "address": {
+        "street": "Chaussée de Mons, 568a",
+        "zip": "7810",
+        "city": "Maffle",
+        "country": "Belgium"
+    }
+},
+{
+    "name": "Mulkay",
+    "firstName": "Morgane",
+	"birthday": "05/04/1996",
+    "address": {
+        "street": "Rue Roi Albert,44",
+        "zip": "5060",
+        "city": "Sambreville",
+        "country": "Belgium"
+    }
+}
+]

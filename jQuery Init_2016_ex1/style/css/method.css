@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* CSS Document */	
+	
+/*...................css for method sheet................*/
+
+/*...................content................*/
+
+main {
+	overflow: hidden;
+}
+
+/*...................subject................*/
+#subject {
+	margin: 10px 300px;
+}
+
+#subject div {
+	background-color: RGB(200,200,200);
+	margin: 10px 0px;
+	padding-left: 10px;
+	border: 2px solid RGB(120,120,120);
+}
+
+#subject div.bckgrd {
+	font-size: 1.5em;
+	text-align: center;
+	color: RGB(50,50,50);
+	background-color: RGB(160,160,160);
+	padding:5px;
+	margin: 0px;
+} 
+/*........................ aside .............................. */
+ aside  {
+	margin-top: 10px;
+}
+
+aside h2 {
+	font-size: 1.4em;
+	text-align: center;
+	text-decoration: underline;
+}
+
+aside p {
+	font-size: 1.2em;
+	text-align: center;
+}
+
+aside li  {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: RGB(214,143,41);
+	padding: 5px 10px;
+}
+
+aside li li {
+	font-size: 1em;
+	color: rgb(255,255,255);
+	font-weight: normal;
+}
+
+aside li li:hover {
+	font-style: italic;
+	cursor: pointer;
+}
+
+aside.left  {
+	float:left;
+}
+
+aside.right  {
+	float:right;
+}
+
+aside code {
+	margin:20px 0px;
+	font-size:1.2em;  
+}
+
+
+
+

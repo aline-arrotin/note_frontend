@@ -1,0 +1,38 @@
+@charset "utf-8";
+/* CSS Document */	
+
+.dark {
+	background-color: rgb(80,80,80);
+}
+
+#box2 {
+	cursor: pointer;
+}
+
+.parentBox {
+	display: block;
+	width: 90%;
+	margin: 40px auto ;
+	padding: 20px;
+	background-color:RGB(200,200,200);
+}
+
+.parentBox h2, .parentBox p {
+	color: RGB(50,49,39);
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.parentBox p {
+	font-size: 1.6em;
+}
+
+.box {
+	margin: 20px auto;
+	width: 90%;
+}
+
+.box h3 {
+	font-size: 1.6em;
+}

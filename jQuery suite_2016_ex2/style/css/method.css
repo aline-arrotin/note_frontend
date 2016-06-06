@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */	
+	
+/*...................css for method sheet................*/
+#container {
+	min-width: 800px;
+	margin: 0 auto ;
+}
+/*...................content................*/
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+main header {
+	width: 100%;
+}
+
+ul li {
+	list-style: none;
+}
+/*...................subject................*/
+
+
+#subject {
+	margin: 10px 0;
+	width: 25em;
+	text-align: center;
+}
+
+#subject div {
+	background-color: RGB(200,200,200);
+	margin: 10px 0px;
+	border: 1px solid RGB(120,120,120);
+}
+
+#subject div.bckgrd {
+	font-size: 1.5em;
+	text-align: center;
+	color: RGB(50,50,50);
+	background-color: RGB(160,160,160);
+	padding:5px;
+	margin: 0px;
+} 
+/*........................ aside .............................. */
+aside  {
+ 	flex: 1;
+	margin-top: 10px;
+	text-align: center;
+}
+
+aside.right {
+	order: 1;
+}
+
+aside h2 {
+	font-size: 1.4em;
+	text-decoration: underline;
+}
+
+aside p {
+	font-size: 1.2em;
+}
+
+aside li  {
+	font-size: 1.2em;
+	font-weight: bold;
+	color: RGB(214,143,41);
+	padding: 5px 10px;
+}
+
+aside li li {
+	font-size: 1em;
+	color: rgb(255,255,255);
+	font-weight: normal;
+}
+
+aside li li:hover {
+	font-style: italic;
+	cursor: pointer;
+}
+
+aside code {
+	margin:20px 0px;
+	font-size:1.2em;  
+}
+
+
+
+
