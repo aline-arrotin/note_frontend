@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+  <meta charset="utf-8">
+  <title>JavaScript et les Formulaires</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+	<meta name="keywords" content="Web,HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Site Web bla bla bla" />
+	<meta name="author" content="Mumu" />
+	<link href="../../style/css/normalize.min.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/main.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/form.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/table.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/printer.css" rel="stylesheet" media="print" />
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="../../js/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body id="form" >
+	<div id="container">
+		<header>
+			<div id="search-lang" >
+				<nav role="navigation" id="lang">
+					<a href="../en/form.html" lang="en" >EN</a>
+					<a href="#">FR</a>
+					<a href="../nl/form.html" lang="nl" >NL</a>
+				</nav>
+				<form role="search" id="search" >
+					<button type="button">Search</button>
+					<input type="search" id="fldSearch" placeholder="Search" />
+				</form>
+			</div>
+			<p role="banner" >Bienvenue, Welcome, Wilkommen</p>
+			<nav role="navigation" id="nav-site">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="selector.html">Sélecteurs</a></li>
+					<li><a href="method.html">Méthodes</a></li>
+					<li><a href="manip.html">Manip</a></li>
+					<li><a href="table.html">Table</a></li>
+					<li><a href="#">Formulaire</a></li>	
+				</ul>
+			</nav>
+		</header>
+		<main role="main" >
+			<header>
+				<h1>JavaScript et les formulaires</h1>
+				<p>Exemple pratique</p>
+			</header>
+			<section id="subject">
+				<h2>Formulaire de renseignement</h2>
+				<form action="load.php" method="get" id="frm1" name="frm1" >
+					<fieldset>
+						<legend>Personnal Info</legend>
+						<div>
+							<label for="name">Name : </label>
+							<input type="text" id="name" name="name" value="Mulkay" />
+						</div>
+						<div>
+							<label for="firstname">Firstname :</label>
+							<input type="text" id="firstname" name="firstname" value="Alain" />
+						</div>
+						<div>
+							<label for="dateOfBirth">Birthdate :</label>
+							<input type="text" id="dateOfBirth" name="dateOfBirth" value="24/02/1959" />
+						</div>
+						<div>
+							<label for="address">Address : </label>
+							<input type="text" id="address" name="address" value="Rebecq" />
+						</div>
+						<div>
+							<label for="zip">Zip Code : </label>
+							<select name="zip" id="zip" title="make a choice">
+								<option value="0000" >---</option>
+								<option value="1000" >1000</option>
+								<option value="1430" >1430</option>
+								<option value="1640" >1640</option>
+								<option value="4000" >2000</option>
+								<option value="5000" >5000</option>
+								<option value="6000" >6000</option>
+							<!-- code via ajax -->	
+							</select>
+						</div>	
+						<div class="radio" >
+							<label for="male"><input id="male" name="sex" value="M" type="radio" />Male</label>
+							<label for="female"><input id="female" name="sex" value="F" type="radio"/>Female</label>
+							<label for="unknown"><input id="unknown" name="sex" value="U" type="radio"  />Unknown</label>
+						</div>
+					</fieldset>
+					<table id="personTable" class="hidden" >
+						<caption class="caption">Person List</caption>
+						<thead>
+							<tr><th>Name</th><th>FirstName</th><th>BirthDay</th><th>Gender</th></tr>
+						</thead>
+						<tfoot>
+							<tr><td class="lastfoot" colspan="4" ><a href="#">back to the top</a></td></tr>
+						</tfoot>
+						<tbody>
+							<tr><td>BALISTIRIER</td><td>Yvonne</td><td>24/02/1962</td><td>Female</td></tr>
+						</tbody>
+					</table>
+					<fieldset class="hidden">
+						<legend>For Men Only</legend>	
+						<div class="checkbox" ><label for="check1"><input id="check1" name="check1" value="BMW" type="checkbox"/>BMW</label></div>
+						<div class="checkbox" ><label for="check2"><input id="check2" name="check2" value="AUDI" type="checkbox"/>AUDI</label></div>
+						<div class="checkbox" ><label for="check3"><input id="check3" name="check3" value="Mercedes" type="checkbox"/>Mercedes</label></div>
+					</fieldset>
+					<fieldset class="hidden">
+						<legend>For Women Only</legend>	
+						<div class="checkbox" ><label for="check4"><input id="check4" name="check1" value="book" type="checkbox"/>50 shades of Grey</label></div>
+						<div class="checkbox" ><label for="check5"><input id="check5" name="check2" value="perfum" type="checkbox"/>J'adore de Dior</label></div>
+						<div class="checkbox" ><label for="check6"><input id="check6" name="check3" value="shoes" type="checkbox"/>Alejandro Ingelmo</label></div>
+					</fieldset>
+					<div class="btnZone">
+						<button type="submit" >Submit</button>
+						<button type="reset" >Reset</button>
+						<button type="button">action</button>
+					</div>
+				</form>
+			</section><!-- 	End section #subject 			-->
+		</main>
+		<footer role="contentinfo">
+			<p>Contact</p>
+			<p>Powered By µ² from ITacWorld</p>
+		</footer>
+	</div><!-- 	End #container 			-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/form.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+

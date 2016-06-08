@@ -1,0 +1,134 @@
+<!doctype html>
+<!--[if IE 8]>  <html lang="fr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr" class="no-js"> <!--<![endif]-->
+  <head>
+  <meta charset="utf-8">
+  <title>Manipulation jQuery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+	<meta name="keywords" content="Web,HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Site Web bla bla bla" />
+	<meta name="author" content="Mumu" />
+	<link href="../../style/css/normalize.min.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/main.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/manip.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/printer.css" rel="stylesheet" media="print" />
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="../../js/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body id="manip" >
+	<div id="container">
+		<header>
+			<div id="search-lang" >
+				<nav role="navigation" id="lang">
+					<a href="../en/manip.html" lang="en" >EN</a>
+					<a href="#">FR</a>
+					<a href="../nl/manip.html" lang="nl" >NL</a>
+				</nav>
+				<form role="search" id="search" >
+					<button type="button">Search</button>
+					<input type="search" id="fldSearch" placeholder="Search" />
+				</form>
+			</div>
+			<p role="banner" >Bienvenue, Welcome, Wilkommen</p>
+			<nav role="navigation" id="nav-site">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="selector.html" >Sélecteurs</a></li>
+					<li><a href="method.html">Méthodes</a></li>
+					<li><a href="#">Manip</a></li>
+					<li><a href="table.html" >Table</a></li>
+					<li><a href="form.html">Formulaire</a></li>	
+				</ul>
+			</nav>						
+		</header>
+		<main role="main" >
+			<header>
+				<h1>jQuery</h1>
+				<p>Exemples pratiques</p>
+			</header>
+			<aside>
+    		<h2>Différents Styles</h2>
+    		<div class="btnGroup">
+	    		<div class="button hidden" id="btnNormal">
+	      			Normal
+	    		</div>
+	    		<div class="button hidden" id="btnHalf">
+	      			Half Column        				
+	      	</div>
+	    		<div class="button hidden" id="btnLarge">
+	      			Large Font
+	    		</div>
+    		</div>
+      </aside	>
+			<section id="subject">
+				<h2>Exemple 1 : ajout events à des boutons</h2>
+				<p>Des événements type "clicks" vont être attribués aux boutons pour modifier le texte ci-dessous</p> 
+				<div class="text" id="textIntro">
+			   		<h3 class="title">Intro</h3>
+			        <p>Texte Introduction ....Dolores phaedrum an usu. Vis at nibh scripserit, saepe voluptaria eu nam, adhuc novum doctus qui ut.
+						Nec quodsi patrioque conclusionemque ad, an mei delectus appellantur.
+						Est at justo appetere, ad probatus singulis electram sea. Rebum nostrum explicari ea eam, sed odio conclusionemque ad.
+						Et facilis accusamus sit, id nam dolore scripserit disputando. Te per erant discere, at veniam deserunt rationibus vix.
+					</p>
+				</div><!-- 	End #textIntro-->
+			  <div class="text" id="textContent" >
+			    <h3 class="title">Content</h3>
+					<p>Texte contenu...;Dolores phaedrum an usu. Vis at nibh scripserit, saepe voluptaria eu nam, adhuc novum doctus qui ut.
+						Nec quodsi patrioque conclusionemque ad, an mei delectus appellantur.
+						Est at justo appetere, ad probatus singulis electram sea. Rebum nostrum explicari ea eam, sed odio conclusionemque ad.
+						Et facilis accusamus sit, id nam dolore scripserit disputando. Te per erant discere, at veniam deserunt rationibus vix.
+						Dolores phaedrum an usu. Vis at nibh scripserit, saepe voluptaria eu nam, adhuc novum doctus qui ut.
+						Nec quodsi patrioque conclusionemque ad, an mei delectus appellantur.
+						Est at justo appetere, ad probatus singulis electram sea. Rebum nostrum explicari ea eam, sed odio conclusionemque ad.
+						Et facilis accusamus sit, id nam dolore scripserit disputando. Te per erant discere, at veniam deserunt rationibus vix.
+					</p>
+					<p>Dolores phaedrum an usu. Vis at nibh scripserit, saepe voluptaria eu nam, adhuc novum doctus qui ut.
+						Nec quodsi patrioque conclusionemque ad, an mei delectus appellantur.
+						Est at justo appetere, ad probatus singulis electram sea. Rebum nostrum explicari ea eam, sed odio conclusionemque ad.
+						Et facilis accusamus sit, id nam dolore scripserit disputando. Te per erant discere, at veniam deserunt rationibus vix.
+					</p>
+					<p>Dolores phaedrum an usu. Vis at nibh scripserit, saepe voluptaria eu nam, adhuc novum doctus qui ut.
+						Nec quodsi patrioque conclusionemque ad, an mei delectus appellantur.
+						Est at justo appetere, ad probatus singulis electram sea. Rebum nostrum explicari ea eam, sed odio conclusionemque ad.
+						Et facilis accusamus sit, id nam dolore scripserit disputando. Te per erant discere, at veniam deserunt rationibus vix.
+					</p>
+				</div><!-- 	End #textContent-->
+				<h2>Exemple 2: Animations d'éléments</h2>
+				<p>JQuery va modifier les CSS provoquant une animation de l'élément html</p> 
+				<div id="animation">
+					<div id="box1" class="box">
+					</div><!-- 	End .box -->
+				</div><!-- 	End #animation -->	
+				<div class="btnZone">
+					<button type="button" >Go</button>
+				</div><!-- 	End .btnZone -->
+			</section><!-- 	End #subject -->
+		</main>
+		<footer role="contentinfo">
+			<p>Contact</p>
+			<p>Powered By µ² from ITacWorld</p>
+		</footer>
+	</div><!-- 	End #container 			-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
+	<script src="../../js/main.js"></script>
+	<script src="../../js/manip.js" ></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

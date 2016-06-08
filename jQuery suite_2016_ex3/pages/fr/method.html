@@ -1,0 +1,166 @@
+<!doctype html>
+<!--[if IE 8]>  <html lang="fr" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr" class="no-js"> <!--<![endif]-->
+  <head>
+  <meta charset="utf-8">
+  <title>méthodes jQuery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0/">
+	<meta name="keywords" content="Web,HTML,CSS,XML,JavaScript" />
+	<meta name="description" content="Site Web bla bla bla" />
+	<meta name="author" content="Mumu" />
+	<link href="../../style/css/normalize.min.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/main.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/method.css" rel="stylesheet" media="screen" />
+	<link href="../../style/css/printer.css" rel="stylesheet" media="print" />
+  <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script>window.html5 || document.write('<script src="../../js/html5shiv.js"><\/script>')</script>
+  <![endif]-->
+</head>
+<body id="method" >
+	<div id="container">
+		<header>
+			<div id="search-lang" >
+				<nav role="navigation" id="lang">
+					<a href="../en/method.html" lang="en" >EN</a>
+					<a href="#">FR</a>
+					<a href="../nl/method.html" lang="nl" >NL</a>
+				</nav>
+				<form role="search" id="search" >
+					<button type="button">Search</button>
+					<input type="search" id="fldSearch" placeholder="Search" />
+				</form>
+			</div>
+			<p role="banner" >Bienvenue, Welcome, Wilkommen</p>
+			<nav role="navigation" id="nav-site">
+				<ul>
+					<li><a href="../../index.html">Home</a></li>
+					<li><a href="selector.html" >Sélecteurs</a></li>
+					<li><a href="#">Méthodes</a></li>
+					<li><a href="manip.html">Manip</a></li>
+					<li><a href="table.html" >Table</a></li>
+					<li><a href="form.html">Formulaire</a></li>	
+				</ul>
+			</nav>									
+		</header>
+		<main role="main" >
+			<header>
+				<h1>Les méthodes JQuery</h1>						
+				<p>Exemple pratique</p>
+			</header>
+			<aside class="left" >
+				<h2> Insertion d'un string HTML</h2>
+				<p> ('&lt;div class="bckgrd" &gt;new paragraphe &lt;/div&gt;')</p>
+				<ul>
+	        <li>Insertion <strong>à l'intérieur</strong> d'un élément
+	        	<ul>
+	        		<li>$('sélecteur').append('à insérer')</li>
+	        		<li>$('sélecteur').prepend('à insérer')</li>
+	        		<li>$('à insérer').appendTo('cible')</li>
+	        		<li>$('à insérer').prependTo('cible')</li>
+	        	</ul>
+					</li>
+					<li>Insertion <strong>à l'extérieur</strong> d'un élément
+        		<ul>
+	        		<li>$('sélecteur').before('à insérer')</li>
+	        		<li>$('sélecteur').after('à insérer')</li>
+	        		<li>$('à insérer').insertBefore('cible')</li>
+	        		<li>$('à insérer').insertAfter('cible')</li>
+        		</ul>
+					</li>
+					<li>Insertion <strong>autour</strong> d'un élément
+        		<ul>
+	        		<li>$('sélecteur').wrap('à insérer')</li>
+	        		<li>$('sélecteur').wrapAll('à insérer')</li>
+	        		<li>$('sélecteur').wrapInner('à insérer')</li>
+        		</ul>
+					</li>
+					<li>Remplacement d'un élément
+        		<ul>
+	        		<li>$('sélecteur').replaceWith('à insérer')</li>
+        		</ul>
+					</li>
+				</ul>	
+    	</aside><!-- 	End aside .left						-->
+    	<aside class="right">
+				<h2> Insertion d'un élément HTML</h2>
+				<p> var element = $("#intro")
+				<ul>
+        	<li>Insertion <strong>à l'intérieur</strong> d'un élément
+	        	<ul>
+	        		<li>$('sélecteur').append(element)</li>
+	        		<li>$('sélecteur').prepend(element)</li>
+	        		<li>$(element).appendTo('cible')</li>
+	        		<li>$(element).prependTo('cible')</li>
+	        	</ul>
+					</li>
+					<li>Insertion <strong>à l'extérieur</strong> d'un élément
+        		<ul>
+	        		<li>$('sélecteur').before(element)</li>
+	        		<li>$('sélecteur').after(element)</li>
+	        		<li>$(element).insertBefore('cible')</li>
+	        		<li>$(element).insertAfter('cible')</li>
+        		</ul>
+					</li>
+					<li>Insertion <strong>autour</strong> d'un élément
+        		<ul>
+	        		<li>$('sélecteur').wrap(element)</li>
+	        		<li>$('sélecteur').wrapAll(element)</li>
+	        		<li>$('sélecteur').wrapInner(element)</li>
+        		</ul>
+					</li>
+					<li>Remplacement d'un élément
+        		<ul>
+	        		<li>$('sélecteur').replaceWith(element)</li>
+        		</ul>
+					</li>
+				</ul>	
+    	</aside><!-- 	End aside	.right					-->		
+			<section id="subject">
+				<div id="intro">
+       		<h2> Introduction </h2>
+       		<p> Lorem ipsum Intro...</p>
+				</div>
+				<div id="chap1">
+       		<h2> Chapitre 1 </h2>
+       		<p> Lorem ipsum Chap 1A... </p>
+       		<p> Lorem ipsum Chap 1B...</p>
+       		<p> Lorem ipsum Chap 1C...</p>
+				</div>
+				<div id="chap2">
+       		<h2> Chapitre 2 </h2>
+         	<p> Lorem ipsum Chap 2A...</p>
+         	<p> Lorem ipsum Chap 2B...</p>
+         	<p> Lorem ipsum Chap 2C... </p>
+	      </div>	
+ 			</section><!-- 	End section #subject 			-->
+		</main>
+		<footer role="contentinfo">
+			<p>Contact</p>
+			<p>Powered By µ² from ITacWorld</p>
+		</footer>
+	</div><!-- 	End #container 			-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="../../js/jquery.min.js"><\/script>')</script>
+		<script src="../../js/main.js"></script>
+		<script src="../../js/method.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

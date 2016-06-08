@@ -1,0 +1,91 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Code Hexa & RGB for colors
+	@colordef	#59594e;	RGB(89,89,78);		dark grey
+	@colordef	#a4a48f;	RGB(164,164,143);	grey beige 
+	@colordef	#d68f29;	RGB(214,143,41);	orange brown
+	@colordef	#323127;	RGB(50,49,39);		dark brown
+	@colordef	#323232;	RGB(50,50,50);		anthracite
+	@colordef	#333333;	RGB(51,51,51);		graphite
+	
+	Code Hexa & RGB for Shades of gray
+	@colordef	#000000;	RGB(0,0,0);			black		00
+	@colordef	#a0a0a0;	RGB(160,160,160);	grey		20
+	@colordef	#c8c8c8;	RGB(200,200,200);	light grey	25
+	@colordef	#e8e8e8;	RGB(232,232,232);	light grey	29
+	@colordef	#f0f0f0;	RGB(240,240,240);	light grey	30
+	@colordef	#ffffff;	RGB(255,255,255);	white		32
+	
+/*........................Table.............................. */
+
+table {
+	width:100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	border-collapse: separate;
+	background-color:RGB(232,232,232);
+	border-spacing: 0;
+	color: RGB(0,0,0);
+	text-align:center;
+	vertical-align: middle;
+}
+
+table caption{
+	font-size: 1.5em;
+	background-color: #616157;
+	border: 1px inset RGB(200,200,200);
+	color: RGB(255,255,255);
+	padding-top: 10px;
+	padding-bottom: 10px;
+	caption-side: top;
+}
+
+table th{
+	font-size: 1.2em;
+	text-transform:uppercase;
+	background-color:#59594e;
+	color:#fff;
+}
+
+table th+th {
+	border-left: 1px solid #c8c8c8;
+}
+
+table tr {
+	background-color: rgb(255,255,255);
+}
+
+table th, table td {
+	padding: 7px 3px;
+	text-align:center;
+}
+
+table tbody tr:nth-child(2n) {
+	background-color: rgb(220,220,220);
+}
+
+table tbody td {
+	font-size: 1.2em;
+}
+
+table tr.total {
+	background-color: rgb(220,220,220);
+	font-size: 1.4em;
+}
+
+table tfoot th  {
+	background-color: #e8e8e8;
+	text-transform:uppercase;
+	border-left: none;
+	border-top: 5px solid #59594e;
+	color: #000;
+}
+
+table .lastfoot{
+	background-color:rgb(89,89,78);
+}
+
+table .lastfoot  a, table .lastfoot a:hover {
+	color: rgb(255,255,255);
+}

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<people>
+	<member sex="male" >
+		<name>Mulkay</name>
+		<firstName>Alain</firstName>
+		<birthday>24/02/1959</birthday>
+		<address>
+			<street>Chaussée de Mons, 568a</street>
+			<zip>7810</zip>
+			<city>Rebecq</city>
+			<country>Belgium</country>
+		</address>
+	</member>
+	<member sex="female">
+		<name>Mulkay</name>
+		<firstName>Morgane</firstName>
+		<birthday>05/04/1996</birthday>
+		<address>
+			<street>Rue Roi Albert, 44</street>
+			<zip>5060</zip>
+			<city>Sambreville</city>
+			<country>Belgium</country>
+		</address>
+	</member>
+</people>

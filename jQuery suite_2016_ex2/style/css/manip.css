@@ -16,9 +16,9 @@ body.half  .text {
 	width: 50%;
 }
 
-.hidden { 
+/*.hidden { 
 	display: none; 
-}
+}*/
 
 .invisible { 
 	visibility: hidden; 

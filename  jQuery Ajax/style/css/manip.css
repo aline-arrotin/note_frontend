@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */	
+	
+/*...................Subject...............*/
+			
+#subject  {
+	clear: both;
+}
+
+/*...................manip jQuery................*/
+body.largeFont .text {
+	font-size: 1.5em;
+}
+
+body.half  .text {
+	width: 50%;
+}
+
+.hidden { 
+	display: none; 
+}
+
+.invisible { 
+	visibility: hidden; 
+}
+
+/*...................aside................*/
+
+aside  {
+	width: 30%;
+	margin: 20px 0 ;
+	padding: 10px;
+	background-color: #ddd;
+  border: 1px solid #000;
+  text-align: center;
+}
+
+aside .btnGroup  {
+	display: flex;
+	justify-content: space-around;
+}
+
+aside .button {
+	flex:1;
+	margin: 5px;
+	padding: 5px;
+	color: #888;
+	font-size: 1.2em;
+	background-color: #fff;
+	border-top: 3px solid #888;
+	border-left: 3px solid #888;
+	border-bottom: 3px solid #444;
+	border-right: 3px solid #444;
+}
+
+aside h2  {
+	font-size: 1.4em;
+	font-weight: normal;
+	color: #777;
+	margin-left: 10px;
+	padding-bottom: 10px;
+	cursor: pointer;
+}
+
+aside .button:hover {
+  cursor: pointer;
+	color: #eee;
+  background-color: #6A6;
+}
+
+aside .selected, aside .selected:hover {
+		background-color: #888;
+		color: #eee;
+}
+
+/*...................animation ................*/
+
+#animation  {
+	position: relative;
+	margin: 20px auto;
+	width: 80%;
+	height: 500px;
+	background-color: RGB(232,232,232);
+}
+
+#animation #box1 {
+	position: relative;
+	top: 20px;
+	left: 20px;
+	width: 50px;
+	height: 50px;
+	background-color: RGB(89,89,78);
+	margin-left: 0;
+	padding: 0;
+}
+
+#animation #box1 h2 {
+	color:RGB(214,143,41);
+}
