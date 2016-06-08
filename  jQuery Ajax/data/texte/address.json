@@ -3,6 +3,7 @@
     "name": "Mulkay",
     "firstName": "Alain",
 	"birthday": "24/02/1959",
+    "sex": "male",
     "address": {
         "street": "Chaussée de Mons, 568a",
         "zip": 7810,
@@ -14,6 +15,7 @@
     "name": "Mulkay",
     "firstName": "Morgane",
 	"birthday": "05/04/1996",
+    "sex": "female",
     "address": {
         "street": "Rue Roi Albert,44",
         "zip": 5060,
